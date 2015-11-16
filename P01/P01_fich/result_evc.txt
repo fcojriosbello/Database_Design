@@ -1,0 +1,762 @@
+SET
+ client_encoding 
+-----------------
+ latin1
+(1 row)
+
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+ c_id |         n_c          |              p_c               
+------+----------------------+--------------------------------
+ C1   | nombreCr1            | Sevilla                       
+ C2   | nombreCr1            | Sevilla                       
+ C3   | nombreCr1            | Londres                       
+ C4   | nombreC04            | Londres                       
+ C5   | nombreC05            | Madrid                        
+ C6   | nombreC06            | París                         
+ C7   | nombreC07            | Sevilla                       
+ C8   | nombreC08            | Sevilla                       
+ C9   | nombreCr2            | Londres                       
+ C10  | nombreCr2            | Londres                       
+ C11  | nombreCr2            | Sevilla                       
+ C12  | nombreC12            | Sevilla                       
+ C13  | nombreC13            | Londres                       
+ C14  | nombreC14            | Londres                       
+ C15  | nombreC15            | Madrid                        
+ C16  | nombreC16            | París                         
+ C17  | nombreC17            | Sevilla                       
+ C18  | nombreC18            | Sevilla                       
+ C19  | nombreC19            | Londres                       
+ C20  | nombreC20            | Londres                       
+(20 rows)
+
+  b) n_v   |   p_v   
+-----------+---------
+ nombreV01 | Sevilla
+ nombreV02 | Londres
+ nombreV03 | Madrid
+ nombreV07 | Madrid
+ nombreV08 | París
+ nombreV09 | Sevilla
+ nombreV10 | Londres
+ nombreV11 | Madrid
+ nombreV15 | Madrid
+ nombreV16 | París
+ nombreV17 | Sevilla
+ nombreV18 | Londres
+ nombreV19 | Madrid
+ nombreV20 | París
+ nombreVr1 | Londres
+ nombreVr1 | París
+ nombreVr1 | Sevilla
+ nombreVr2 | Londres
+ nombreVr2 | París
+ nombreVr2 | Sevilla
+(20 rows)
+
+  c) n_e   | t_e 
+-----------+-----
+ nombreE01 | ATM
+ nombreE04 | ATM
+ nombreE10 | ATM
+ nombreE13 | ATM
+ nombreE19 | ATM
+ nombreEr1 | ATM
+ nombreEr2 | ATM
+(7 rows)
+
+        d) n_c        
+----------------------
+ nombreC15           
+ nombreCr1           
+ nombreCr2           
+(3 rows)
+
+  e) n_v   
+-----------
+ nombreV01
+ nombreV02
+ nombreV17
+ nombreVr2
+(4 rows)
+
+  f) n_v   
+-----------
+ nombreV03
+ nombreV07
+ nombreV08
+ nombreV09
+ nombreV10
+ nombreV11
+ nombreV15
+ nombreV16
+ nombreV18
+ nombreV19
+ nombreV20
+ nombreVr1
+ nombreVr2
+(13 rows)
+
+ g) v_ID 
+---------
+ V1  
+ V10 
+ V15 
+ V2  
+ V9  
+(5 rows)
+
+  h) n_v   
+-----------
+ nombreVr2
+(1 row)
+
+  i) n_v   
+-----------
+ nombreV01
+ nombreV02
+ nombreV03
+ nombreV07
+ nombreV08
+ nombreV09
+ nombreV10
+ nombreV11
+ nombreV15
+ nombreV16
+ nombreV17
+ nombreV19
+ nombreV20
+ nombreVr1
+ nombreVr2
+(15 rows)
+
+ j) e_ID | v_id | c_id |   p_e   |   p_v   |              p_c               
+---------+------+------+---------+---------+--------------------------------
+ E1      | V1   | C1   | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C11  | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C12  | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C17  | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C18  | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C2   | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C7   | Sevilla | Sevilla | Sevilla                       
+ E1      | V1   | C8   | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C1   | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C11  | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C12  | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C17  | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C18  | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C2   | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C7   | Sevilla | Sevilla | Sevilla                       
+ E1      | V13  | C8   | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C1   | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C11  | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C12  | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C17  | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C18  | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C2   | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C7   | Sevilla | Sevilla | Sevilla                       
+ E1      | V17  | C8   | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C1   | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C11  | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C12  | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C17  | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C18  | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C2   | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C7   | Sevilla | Sevilla | Sevilla                       
+ E1      | V5   | C8   | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C1   | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C11  | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C12  | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C17  | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C18  | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C2   | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C7   | Sevilla | Sevilla | Sevilla                       
+ E1      | V9   | C8   | Sevilla | Sevilla | Sevilla                       
+ E10     | V10  | C10  | Londres | Londres | Londres                       
+ E10     | V10  | C13  | Londres | Londres | Londres                       
+ E10     | V10  | C14  | Londres | Londres | Londres                       
+ E10     | V10  | C19  | Londres | Londres | Londres                       
+ E10     | V10  | C20  | Londres | Londres | Londres                       
+ E10     | V10  | C3   | Londres | Londres | Londres                       
+ E10     | V10  | C4   | Londres | Londres | Londres                       
+ E10     | V10  | C9   | Londres | Londres | Londres                       
+ E10     | V14  | C10  | Londres | Londres | Londres                       
+ E10     | V14  | C13  | Londres | Londres | Londres                       
+ E10     | V14  | C14  | Londres | Londres | Londres                       
+ E10     | V14  | C19  | Londres | Londres | Londres                       
+ E10     | V14  | C20  | Londres | Londres | Londres                       
+ E10     | V14  | C3   | Londres | Londres | Londres                       
+ E10     | V14  | C4   | Londres | Londres | Londres                       
+ E10     | V14  | C9   | Londres | Londres | Londres                       
+ E10     | V18  | C10  | Londres | Londres | Londres                       
+ E10     | V18  | C13  | Londres | Londres | Londres                       
+ E10     | V18  | C14  | Londres | Londres | Londres                       
+ E10     | V18  | C19  | Londres | Londres | Londres                       
+ E10     | V18  | C20  | Londres | Londres | Londres                       
+ E10     | V18  | C3   | Londres | Londres | Londres                       
+ E10     | V18  | C4   | Londres | Londres | Londres                       
+ E10     | V18  | C9   | Londres | Londres | Londres                       
+ E10     | V2   | C10  | Londres | Londres | Londres                       
+ E10     | V2   | C13  | Londres | Londres | Londres                       
+ E10     | V2   | C14  | Londres | Londres | Londres                       
+ E10     | V2   | C19  | Londres | Londres | Londres                       
+ E10     | V2   | C20  | Londres | Londres | Londres                       
+ E10     | V2   | C3   | Londres | Londres | Londres                       
+ E10     | V2   | C4   | Londres | Londres | Londres                       
+ E10     | V2   | C9   | Londres | Londres | Londres                       
+ E10     | V6   | C10  | Londres | Londres | Londres                       
+ E10     | V6   | C13  | Londres | Londres | Londres                       
+ E10     | V6   | C14  | Londres | Londres | Londres                       
+ E10     | V6   | C19  | Londres | Londres | Londres                       
+ E10     | V6   | C20  | Londres | Londres | Londres                       
+ E10     | V6   | C3   | Londres | Londres | Londres                       
+ E10     | V6   | C4   | Londres | Londres | Londres                       
+ E10     | V6   | C9   | Londres | Londres | Londres                       
+ E11     | V11  | C15  | Madrid  | Madrid  | Madrid                        
+ E11     | V11  | C5   | Madrid  | Madrid  | Madrid                        
+ E11     | V15  | C15  | Madrid  | Madrid  | Madrid                        
+ E11     | V15  | C5   | Madrid  | Madrid  | Madrid                        
+ E11     | V19  | C15  | Madrid  | Madrid  | Madrid                        
+ E11     | V19  | C5   | Madrid  | Madrid  | Madrid                        
+ E11     | V3   | C15  | Madrid  | Madrid  | Madrid                        
+ E11     | V3   | C5   | Madrid  | Madrid  | Madrid                        
+ E11     | V7   | C15  | Madrid  | Madrid  | Madrid                        
+ E11     | V7   | C5   | Madrid  | Madrid  | Madrid                        
+ E12     | V11  | C15  | Madrid  | Madrid  | Madrid                        
+ E12     | V11  | C5   | Madrid  | Madrid  | Madrid                        
+ E12     | V15  | C15  | Madrid  | Madrid  | Madrid                        
+ E12     | V15  | C5   | Madrid  | Madrid  | Madrid                        
+ E12     | V19  | C15  | Madrid  | Madrid  | Madrid                        
+ E12     | V19  | C5   | Madrid  | Madrid  | Madrid                        
+ E12     | V3   | C15  | Madrid  | Madrid  | Madrid                        
+ E12     | V3   | C5   | Madrid  | Madrid  | Madrid                        
+ E12     | V7   | C15  | Madrid  | Madrid  | Madrid                        
+ E12     | V7   | C5   | Madrid  | Madrid  | Madrid                        
+ E13     | V11  | C15  | Madrid  | Madrid  | Madrid                        
+ E13     | V11  | C5   | Madrid  | Madrid  | Madrid                        
+ E13     | V15  | C15  | Madrid  | Madrid  | Madrid                        
+ E13     | V15  | C5   | Madrid  | Madrid  | Madrid                        
+ E13     | V19  | C15  | Madrid  | Madrid  | Madrid                        
+ E13     | V19  | C5   | Madrid  | Madrid  | Madrid                        
+ E13     | V3   | C15  | Madrid  | Madrid  | Madrid                        
+ E13     | V3   | C5   | Madrid  | Madrid  | Madrid                        
+ E13     | V7   | C15  | Madrid  | Madrid  | Madrid                        
+ E13     | V7   | C5   | Madrid  | Madrid  | Madrid                        
+ E14     | V11  | C15  | Madrid  | Madrid  | Madrid                        
+ E14     | V11  | C5   | Madrid  | Madrid  | Madrid                        
+ E14     | V15  | C15  | Madrid  | Madrid  | Madrid                        
+ E14     | V15  | C5   | Madrid  | Madrid  | Madrid                        
+ E14     | V19  | C15  | Madrid  | Madrid  | Madrid                        
+ E14     | V19  | C5   | Madrid  | Madrid  | Madrid                        
+ E14     | V3   | C15  | Madrid  | Madrid  | Madrid                        
+ E14     | V3   | C5   | Madrid  | Madrid  | Madrid                        
+ E14     | V7   | C15  | Madrid  | Madrid  | Madrid                        
+ E14     | V7   | C5   | Madrid  | Madrid  | Madrid                        
+ E15     | V11  | C15  | Madrid  | Madrid  | Madrid                        
+ E15     | V11  | C5   | Madrid  | Madrid  | Madrid                        
+ E15     | V15  | C15  | Madrid  | Madrid  | Madrid                        
+ E15     | V15  | C5   | Madrid  | Madrid  | Madrid                        
+ E15     | V19  | C15  | Madrid  | Madrid  | Madrid                        
+ E15     | V19  | C5   | Madrid  | Madrid  | Madrid                        
+ E15     | V3   | C15  | Madrid  | Madrid  | Madrid                        
+ E15     | V3   | C5   | Madrid  | Madrid  | Madrid                        
+ E15     | V7   | C15  | Madrid  | Madrid  | Madrid                        
+ E15     | V7   | C5   | Madrid  | Madrid  | Madrid                        
+ E16     | V12  | C16  | París   | París   | París                         
+ E16     | V12  | C6   | París   | París   | París                         
+ E16     | V16  | C16  | París   | París   | París                         
+ E16     | V16  | C6   | París   | París   | París                         
+ E16     | V20  | C16  | París   | París   | París                         
+ E16     | V20  | C6   | París   | París   | París                         
+ E16     | V4   | C16  | París   | París   | París                         
+ E16     | V4   | C6   | París   | París   | París                         
+ E16     | V8   | C16  | París   | París   | París                         
+ E16     | V8   | C6   | París   | París   | París                         
+ E17     | V12  | C16  | París   | París   | París                         
+ E17     | V12  | C6   | París   | París   | París                         
+ E17     | V16  | C16  | París   | París   | París                         
+ E17     | V16  | C6   | París   | París   | París                         
+ E17     | V20  | C16  | París   | París   | París                         
+ E17     | V20  | C6   | París   | París   | París                         
+ E17     | V4   | C16  | París   | París   | París                         
+ E17     | V4   | C6   | París   | París   | París                         
+ E17     | V8   | C16  | París   | París   | París                         
+ E17     | V8   | C6   | París   | París   | París                         
+ E18     | V12  | C16  | París   | París   | París                         
+ E18     | V12  | C6   | París   | París   | París                         
+ E18     | V16  | C16  | París   | París   | París                         
+ E18     | V16  | C6   | París   | París   | París                         
+ E18     | V20  | C16  | París   | París   | París                         
+ E18     | V20  | C6   | París   | París   | París                         
+ E18     | V4   | C16  | París   | París   | París                         
+ E18     | V4   | C6   | París   | París   | París                         
+ E18     | V8   | C16  | París   | París   | París                         
+ E18     | V8   | C6   | París   | París   | París                         
+ E19     | V12  | C16  | París   | París   | París                         
+ E19     | V12  | C6   | París   | París   | París                         
+ E19     | V16  | C16  | París   | París   | París                         
+ E19     | V16  | C6   | París   | París   | París                         
+ E19     | V20  | C16  | París   | París   | París                         
+ E19     | V20  | C6   | París   | París   | París                         
+ E19     | V4   | C16  | París   | París   | París                         
+ E19     | V4   | C6   | París   | París   | París                         
+ E19     | V8   | C16  | París   | París   | París                         
+ E19     | V8   | C6   | París   | París   | París                         
+ E2      | V1   | C1   | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C11  | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C12  | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C17  | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C18  | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C2   | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C7   | Sevilla | Sevilla | Sevilla                       
+ E2      | V1   | C8   | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C1   | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C11  | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C12  | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C17  | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C18  | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C2   | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C7   | Sevilla | Sevilla | Sevilla                       
+ E2      | V13  | C8   | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C1   | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C11  | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C12  | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C17  | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C18  | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C2   | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C7   | Sevilla | Sevilla | Sevilla                       
+ E2      | V17  | C8   | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C1   | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C11  | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C12  | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C17  | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C18  | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C2   | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C7   | Sevilla | Sevilla | Sevilla                       
+ E2      | V5   | C8   | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C1   | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C11  | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C12  | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C17  | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C18  | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C2   | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C7   | Sevilla | Sevilla | Sevilla                       
+ E2      | V9   | C8   | Sevilla | Sevilla | Sevilla                       
+ E20     | V12  | C16  | París   | París   | París                         
+ E20     | V12  | C6   | París   | París   | París                         
+ E20     | V16  | C16  | París   | París   | París                         
+ E20     | V16  | C6   | París   | París   | París                         
+ E20     | V20  | C16  | París   | París   | París                         
+ E20     | V20  | C6   | París   | París   | París                         
+ E20     | V4   | C16  | París   | París   | París                         
+ E20     | V4   | C6   | París   | París   | París                         
+ E20     | V8   | C16  | París   | París   | París                         
+ E20     | V8   | C6   | París   | París   | París                         
+ E3      | V1   | C1   | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C11  | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C12  | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C17  | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C18  | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C2   | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C7   | Sevilla | Sevilla | Sevilla                       
+ E3      | V1   | C8   | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C1   | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C11  | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C12  | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C17  | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C18  | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C2   | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C7   | Sevilla | Sevilla | Sevilla                       
+ E3      | V13  | C8   | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C1   | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C11  | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C12  | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C17  | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C18  | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C2   | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C7   | Sevilla | Sevilla | Sevilla                       
+ E3      | V17  | C8   | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C1   | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C11  | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C12  | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C17  | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C18  | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C2   | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C7   | Sevilla | Sevilla | Sevilla                       
+ E3      | V5   | C8   | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C1   | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C11  | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C12  | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C17  | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C18  | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C2   | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C7   | Sevilla | Sevilla | Sevilla                       
+ E3      | V9   | C8   | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C1   | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C11  | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C12  | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C17  | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C18  | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C2   | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C7   | Sevilla | Sevilla | Sevilla                       
+ E4      | V1   | C8   | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C1   | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C11  | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C12  | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C17  | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C18  | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C2   | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C7   | Sevilla | Sevilla | Sevilla                       
+ E4      | V13  | C8   | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C1   | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C11  | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C12  | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C17  | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C18  | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C2   | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C7   | Sevilla | Sevilla | Sevilla                       
+ E4      | V17  | C8   | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C1   | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C11  | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C12  | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C17  | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C18  | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C2   | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C7   | Sevilla | Sevilla | Sevilla                       
+ E4      | V5   | C8   | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C1   | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C11  | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C12  | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C17  | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C18  | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C2   | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C7   | Sevilla | Sevilla | Sevilla                       
+ E4      | V9   | C8   | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C1   | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C11  | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C12  | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C17  | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C18  | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C2   | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C7   | Sevilla | Sevilla | Sevilla                       
+ E5      | V1   | C8   | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C1   | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C11  | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C12  | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C17  | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C18  | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C2   | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C7   | Sevilla | Sevilla | Sevilla                       
+ E5      | V13  | C8   | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C1   | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C11  | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C12  | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C17  | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C18  | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C2   | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C7   | Sevilla | Sevilla | Sevilla                       
+ E5      | V17  | C8   | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C1   | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C11  | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C12  | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C17  | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C18  | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C2   | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C7   | Sevilla | Sevilla | Sevilla                       
+ E5      | V5   | C8   | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C1   | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C11  | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C12  | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C17  | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C18  | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C2   | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C7   | Sevilla | Sevilla | Sevilla                       
+ E5      | V9   | C8   | Sevilla | Sevilla | Sevilla                       
+ E6      | V10  | C10  | Londres | Londres | Londres                       
+ E6      | V10  | C13  | Londres | Londres | Londres                       
+ E6      | V10  | C14  | Londres | Londres | Londres                       
+ E6      | V10  | C19  | Londres | Londres | Londres                       
+ E6      | V10  | C20  | Londres | Londres | Londres                       
+ E6      | V10  | C3   | Londres | Londres | Londres                       
+ E6      | V10  | C4   | Londres | Londres | Londres                       
+ E6      | V10  | C9   | Londres | Londres | Londres                       
+ E6      | V14  | C10  | Londres | Londres | Londres                       
+ E6      | V14  | C13  | Londres | Londres | Londres                       
+ E6      | V14  | C14  | Londres | Londres | Londres                       
+ E6      | V14  | C19  | Londres | Londres | Londres                       
+ E6      | V14  | C20  | Londres | Londres | Londres                       
+ E6      | V14  | C3   | Londres | Londres | Londres                       
+ E6      | V14  | C4   | Londres | Londres | Londres                       
+ E6      | V14  | C9   | Londres | Londres | Londres                       
+ E6      | V18  | C10  | Londres | Londres | Londres                       
+ E6      | V18  | C13  | Londres | Londres | Londres                       
+ E6      | V18  | C14  | Londres | Londres | Londres                       
+ E6      | V18  | C19  | Londres | Londres | Londres                       
+ E6      | V18  | C20  | Londres | Londres | Londres                       
+ E6      | V18  | C3   | Londres | Londres | Londres                       
+ E6      | V18  | C4   | Londres | Londres | Londres                       
+ E6      | V18  | C9   | Londres | Londres | Londres                       
+ E6      | V2   | C10  | Londres | Londres | Londres                       
+ E6      | V2   | C13  | Londres | Londres | Londres                       
+ E6      | V2   | C14  | Londres | Londres | Londres                       
+ E6      | V2   | C19  | Londres | Londres | Londres                       
+ E6      | V2   | C20  | Londres | Londres | Londres                       
+ E6      | V2   | C3   | Londres | Londres | Londres                       
+ E6      | V2   | C4   | Londres | Londres | Londres                       
+ E6      | V2   | C9   | Londres | Londres | Londres                       
+ E6      | V6   | C10  | Londres | Londres | Londres                       
+ E6      | V6   | C13  | Londres | Londres | Londres                       
+ E6      | V6   | C14  | Londres | Londres | Londres                       
+ E6      | V6   | C19  | Londres | Londres | Londres                       
+ E6      | V6   | C20  | Londres | Londres | Londres                       
+ E6      | V6   | C3   | Londres | Londres | Londres                       
+ E6      | V6   | C4   | Londres | Londres | Londres                       
+ E6      | V6   | C9   | Londres | Londres | Londres                       
+ E7      | V10  | C10  | Londres | Londres | Londres                       
+ E7      | V10  | C13  | Londres | Londres | Londres                       
+ E7      | V10  | C14  | Londres | Londres | Londres                       
+ E7      | V10  | C19  | Londres | Londres | Londres                       
+ E7      | V10  | C20  | Londres | Londres | Londres                       
+ E7      | V10  | C3   | Londres | Londres | Londres                       
+ E7      | V10  | C4   | Londres | Londres | Londres                       
+ E7      | V10  | C9   | Londres | Londres | Londres                       
+ E7      | V14  | C10  | Londres | Londres | Londres                       
+ E7      | V14  | C13  | Londres | Londres | Londres                       
+ E7      | V14  | C14  | Londres | Londres | Londres                       
+ E7      | V14  | C19  | Londres | Londres | Londres                       
+ E7      | V14  | C20  | Londres | Londres | Londres                       
+ E7      | V14  | C3   | Londres | Londres | Londres                       
+ E7      | V14  | C4   | Londres | Londres | Londres                       
+ E7      | V14  | C9   | Londres | Londres | Londres                       
+ E7      | V18  | C10  | Londres | Londres | Londres                       
+ E7      | V18  | C13  | Londres | Londres | Londres                       
+ E7      | V18  | C14  | Londres | Londres | Londres                       
+ E7      | V18  | C19  | Londres | Londres | Londres                       
+ E7      | V18  | C20  | Londres | Londres | Londres                       
+ E7      | V18  | C3   | Londres | Londres | Londres                       
+ E7      | V18  | C4   | Londres | Londres | Londres                       
+ E7      | V18  | C9   | Londres | Londres | Londres                       
+ E7      | V2   | C10  | Londres | Londres | Londres                       
+ E7      | V2   | C13  | Londres | Londres | Londres                       
+ E7      | V2   | C14  | Londres | Londres | Londres                       
+ E7      | V2   | C19  | Londres | Londres | Londres                       
+ E7      | V2   | C20  | Londres | Londres | Londres                       
+ E7      | V2   | C3   | Londres | Londres | Londres                       
+ E7      | V2   | C4   | Londres | Londres | Londres                       
+ E7      | V2   | C9   | Londres | Londres | Londres                       
+ E7      | V6   | C10  | Londres | Londres | Londres                       
+ E7      | V6   | C13  | Londres | Londres | Londres                       
+ E7      | V6   | C14  | Londres | Londres | Londres                       
+ E7      | V6   | C19  | Londres | Londres | Londres                       
+ E7      | V6   | C20  | Londres | Londres | Londres                       
+ E7      | V6   | C3   | Londres | Londres | Londres                       
+ E7      | V6   | C4   | Londres | Londres | Londres                       
+ E7      | V6   | C9   | Londres | Londres | Londres                       
+ E8      | V10  | C10  | Londres | Londres | Londres                       
+ E8      | V10  | C13  | Londres | Londres | Londres                       
+ E8      | V10  | C14  | Londres | Londres | Londres                       
+ E8      | V10  | C19  | Londres | Londres | Londres                       
+ E8      | V10  | C20  | Londres | Londres | Londres                       
+ E8      | V10  | C3   | Londres | Londres | Londres                       
+ E8      | V10  | C4   | Londres | Londres | Londres                       
+ E8      | V10  | C9   | Londres | Londres | Londres                       
+ E8      | V14  | C10  | Londres | Londres | Londres                       
+ E8      | V14  | C13  | Londres | Londres | Londres                       
+ E8      | V14  | C14  | Londres | Londres | Londres                       
+ E8      | V14  | C19  | Londres | Londres | Londres                       
+ E8      | V14  | C20  | Londres | Londres | Londres                       
+ E8      | V14  | C3   | Londres | Londres | Londres                       
+ E8      | V14  | C4   | Londres | Londres | Londres                       
+ E8      | V14  | C9   | Londres | Londres | Londres                       
+ E8      | V18  | C10  | Londres | Londres | Londres                       
+ E8      | V18  | C13  | Londres | Londres | Londres                       
+ E8      | V18  | C14  | Londres | Londres | Londres                       
+ E8      | V18  | C19  | Londres | Londres | Londres                       
+ E8      | V18  | C20  | Londres | Londres | Londres                       
+ E8      | V18  | C3   | Londres | Londres | Londres                       
+ E8      | V18  | C4   | Londres | Londres | Londres                       
+ E8      | V18  | C9   | Londres | Londres | Londres                       
+ E8      | V2   | C10  | Londres | Londres | Londres                       
+ E8      | V2   | C13  | Londres | Londres | Londres                       
+ E8      | V2   | C14  | Londres | Londres | Londres                       
+ E8      | V2   | C19  | Londres | Londres | Londres                       
+ E8      | V2   | C20  | Londres | Londres | Londres                       
+ E8      | V2   | C3   | Londres | Londres | Londres                       
+ E8      | V2   | C4   | Londres | Londres | Londres                       
+ E8      | V2   | C9   | Londres | Londres | Londres                       
+ E8      | V6   | C10  | Londres | Londres | Londres                       
+ E8      | V6   | C13  | Londres | Londres | Londres                       
+ E8      | V6   | C14  | Londres | Londres | Londres                       
+ E8      | V6   | C19  | Londres | Londres | Londres                       
+ E8      | V6   | C20  | Londres | Londres | Londres                       
+ E8      | V6   | C3   | Londres | Londres | Londres                       
+ E8      | V6   | C4   | Londres | Londres | Londres                       
+ E8      | V6   | C9   | Londres | Londres | Londres                       
+ E9      | V10  | C10  | Londres | Londres | Londres                       
+ E9      | V10  | C13  | Londres | Londres | Londres                       
+ E9      | V10  | C14  | Londres | Londres | Londres                       
+ E9      | V10  | C19  | Londres | Londres | Londres                       
+ E9      | V10  | C20  | Londres | Londres | Londres                       
+ E9      | V10  | C3   | Londres | Londres | Londres                       
+ E9      | V10  | C4   | Londres | Londres | Londres                       
+ E9      | V10  | C9   | Londres | Londres | Londres                       
+ E9      | V14  | C10  | Londres | Londres | Londres                       
+ E9      | V14  | C13  | Londres | Londres | Londres                       
+ E9      | V14  | C14  | Londres | Londres | Londres                       
+ E9      | V14  | C19  | Londres | Londres | Londres                       
+ E9      | V14  | C20  | Londres | Londres | Londres                       
+ E9      | V14  | C3   | Londres | Londres | Londres                       
+ E9      | V14  | C4   | Londres | Londres | Londres                       
+ E9      | V14  | C9   | Londres | Londres | Londres                       
+ E9      | V18  | C10  | Londres | Londres | Londres                       
+ E9      | V18  | C13  | Londres | Londres | Londres                       
+ E9      | V18  | C14  | Londres | Londres | Londres                       
+ E9      | V18  | C19  | Londres | Londres | Londres                       
+ E9      | V18  | C20  | Londres | Londres | Londres                       
+ E9      | V18  | C3   | Londres | Londres | Londres                       
+ E9      | V18  | C4   | Londres | Londres | Londres                       
+ E9      | V18  | C9   | Londres | Londres | Londres                       
+ E9      | V2   | C10  | Londres | Londres | Londres                       
+ E9      | V2   | C13  | Londres | Londres | Londres                       
+ E9      | V2   | C14  | Londres | Londres | Londres                       
+ E9      | V2   | C19  | Londres | Londres | Londres                       
+ E9      | V2   | C20  | Londres | Londres | Londres                       
+ E9      | V2   | C3   | Londres | Londres | Londres                       
+ E9      | V2   | C4   | Londres | Londres | Londres                       
+ E9      | V2   | C9   | Londres | Londres | Londres                       
+ E9      | V6   | C10  | Londres | Londres | Londres                       
+ E9      | V6   | C13  | Londres | Londres | Londres                       
+ E9      | V6   | C14  | Londres | Londres | Londres                       
+ E9      | V6   | C19  | Londres | Londres | Londres                       
+ E9      | V6   | C20  | Londres | Londres | Londres                       
+ E9      | V6   | C3   | Londres | Londres | Londres                       
+ E9      | V6   | C4   | Londres | Londres | Londres                       
+ E9      | V6   | C9   | Londres | Londres | Londres                       
+(500 rows)
+
+ k) e_ID 
+---------
+ E1  
+ E10 
+ E11 
+ E12 
+ E13 
+ E14 
+ E15 
+ E16 
+ E17 
+ E18 
+ E19 
+ E2  
+ E20 
+ E3  
+ E4  
+ E5  
+ E6  
+ E7  
+ E8  
+ E9  
+(20 rows)
+
+ l) e_ID 
+---------
+ E1  
+ E13 
+ E17 
+ E2  
+ E20 
+ E3  
+(6 rows)
+
+  m) n_e   | t_e |   p_e   
+-----------+-----+---------
+ nombreE02 | ETH | Sevilla
+ nombreE03 | FR  | Sevilla
+ nombreE04 | ATM | Sevilla
+ nombreE05 | ETH | Sevilla
+ nombreE06 | FR  | Londres
+ nombreE10 | ATM | Londres
+ nombreE11 | ETH | Madrid
+ nombreE12 | FR  | Madrid
+ nombreE14 | ETH | Madrid
+ nombreE18 | FR  | París
+ nombreE20 | ETH | París
+ nombreEr1 | ETH | Londres
+ nombreEr1 | FR  | Londres
+ nombreEr2 | ATM | París
+ nombreEr2 | ETH | París
+ nombreEr2 | FR  | Madrid
+(16 rows)
+
+  n) n_v   
+-----------
+ nombreV01
+ nombreV02
+ nombreV03
+ nombreV07
+ nombreV08
+ nombreV09
+ nombreV10
+ nombreV11
+ nombreV15
+ nombreV16
+ nombreV17
+ nombreV18
+ nombreV19
+ nombreV20
+ nombreVr1
+ nombreVr2
+(16 rows)
+
+ o) e_ID 
+---------
+ E13 
+(1 row)
+
+ p) e_ID 
+---------
+ E1  
+ E10 
+ E11 
+ E12 
+ E13 
+ E14 
+ E15 
+ E16 
+ E17 
+ E2  
+ E20 
+ E3  
+ E5  
+ E6  
+ E8  
+(15 rows)
+
+ q) v_ID 
+---------
+ V13 
+(1 row)
+
+ r) v_ID 
+---------
+(0 rows)
+
+ s) v_ID 
+---------
+ V9  
+(1 row)
+
+ t) v_ID 
+---------
+ V1  
+ V13 
+ V2  
+ V9  
+(4 rows)
+

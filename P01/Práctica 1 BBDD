@@ -1,0 +1,63 @@
+Práctica 1 BBDD
+
+2.
+
+ psql -h ait24.us.es -U frariobel -d practicas -c "CREATE DATABASE fraiobel;"
+
+3.
+
+ psql -h ait24.us.es -U frariobel -d frariobel;
+ salir \q
+
+4.
+
+ \h -> muestra comandos de SQL
+
+ \? -> muestra comandos de postgresql
+
+5.
+
+ \h de -> comandos que empiezan por "de"
+
+
+6.
+
+ Mostrar una lista de las bases de datos -> \l
+ Mostrar una lista de las tablas -> \dt
+ Mostrar una lista de los usuarios -> \du
+
+ 7.
+ 
+ 9.
+ 	frariobel=> DELETE FROM e WHERE e_id='E1';
+
+	ERROR:  update o delete en «e» viola la llave foránea «evc_e_id_fkey» en la tabla «evc»
+	DETAIL:  La llave (e_id)=(E1  ) todavía es referida desde la tabla «evc».
+
+10.
+frariobel=> \d evc
+         Table "public.evc"
+  Column  |     Type     | Modifiers 
+----------+--------------+-----------
+ e_id     | character(4) | not null
+ v_id     | character(4) | not null
+ c_id     | character(4) | not null
+ cantidad | integer      | 
+Indexes:
+    "evc_pkey" PRIMARY KEY, btree (e_id, v_id, c_id)
+Foreign-key constraints:
+    "evc_c_id_fkey" FOREIGN KEY (c_id) REFERENCES c(c_id)
+    "evc_e_id_fkey" FOREIGN KEY (e_id) REFERENCES e(e_id)
+    "evc_v_id_fkey" FOREIGN KEY (v_id) REFERENCES v(v_id)
+11.
+
+   frariobel=> ALTER TABLE evc ADD COLUMN importe float(8);
+
+12.
+	ALTER TABLE evc ADD CHECK(importe>0); 
+
+14.
+	ALTER TABLE evc DROP CONSTRAINT  evc_importe_check;	
+
+15.
+	ALTER TABLE	evc DROP COLUMN importe;

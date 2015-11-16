@@ -1,0 +1,10 @@
+tienda01	Sevilla	10
+tienda02	Madrid	12
+tienda03	Valencia	13
+tienda04	Barcelona	12
+tienda05	Bilbao	13
+tienda06	Sevilla	12
+tienda07	Madrid	13
+tienda08	Valencia	12
+tienda09	Barcelona	13
+tienda10	Bilbao	15

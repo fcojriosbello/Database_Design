@@ -1,0 +1,40 @@
+28000001	Juan Díaz de Solís 1	Sevilla
+28000002	Salado 5	Sevilla
+28000003	Fuencarral 5	Sevilla
+28000004	Amor 23	Sevilla
+28000005	Fe 40	Sevilla
+28000006	Salud 33	Sevilla
+28000007	Juan Díaz de Solís 2	Madrid
+28000008	Salado 6	Madrid
+28000009	Fuencarral 6	Madrid
+28000010	Amor 24	Madrid
+28000011	Fe 41	Madrid
+28000012	Salud 34	Madrid
+28000013	Juan Díaz de Solís 3	Valencia
+28000014	Salado 7	Valencia
+28000015	Fuencarral 7	Valencia
+28000016	Amor 25	Valencia
+28000017	Fe 42	Valencia
+28000018	Salud 35	Valencia
+28000019	Juan Díaz de Solís 4	Barcelona
+28000020	Salado 8	Barcelona
+28000021	Fuencarral 8	Barcelona
+28000022	Amor 26	Barcelona
+28000023	Fe 43	Barcelona
+28000024	Salud 36	Barcelona
+28000025	Juan Díaz de Solís 5	Bilbao
+28000026	Salado 9	Bilbao
+28000027	Fuencarral 9	Bilbao
+28000028	Amor 27	Bilbao
+28000029	Fe 44	Bilbao
+28000030	Salud 37	Bilbao
+28000031	Salud 38	Bilbao
+28000032	Salud 39	Bilbao
+28000033	Salud 40	Bilbao
+28000034	Salud 41	Bilbao
+28000035	Salud 42	Bilbao
+28000036	Salud 43	Sevilla
+28000037	Salud 44	Sevilla
+28000038	Salud 45	Sevilla
+28000039	Salud 46	Sevilla
+28000040	Salud 47	Sevilla

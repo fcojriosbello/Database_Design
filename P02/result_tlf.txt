@@ -1,0 +1,169 @@
+SET
+ client_encoding 
+-----------------
+ LATIN1
+(1 row)
+
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+DROP TABLE
+CREATE TABLE
+a) dni de los clientes asociados a un número de contrato, junto con éste y su límite, pero sólo aquellos que hayan contratado en la tienda de nombre tienda01
+   dni    |    num    | limite 
+----------+-----------+--------
+ 28000001 | 600000001 |  30.00
+ 28000001 | 600000041 |  55.00
+ 28000011 | 600000011 |  45.00
+ 28000011 | 600000051 |  70.00
+(4 rows)
+
+b) nombre y número de empleados de las tiendas que tengan más empleados que alguna tienda de Barcelona.
+ nom_tie  | empleados 
+----------+-----------
+ tienda03 |        13
+ tienda05 |        13
+ tienda07 |        13
+ tienda09 |        13
+ tienda10 |        15
+(5 rows)
+
+c) Número de clientes de contrato para cada tienda (mostrar nombre de tienda y cantidad)
+ nom_tie  | count 
+----------+-------
+ tienda01 |     2
+ tienda02 |     2
+ tienda03 |     2
+ tienda04 |     2
+ tienda05 |     2
+ tienda06 |     2
+ tienda07 |     2
+ tienda08 |     2
+ tienda09 |     2
+ tienda10 |     2
+(10 rows)
+
+d) clientes que tienen tanto un número de prepago como uno de contrato asignados en la tienda tienda01
+   dni    
+----------
+ 28000011
+(1 row)
+
+e1) nombre y número de empleados de las tiendas que tengan más empleados que alguna tienda de Barcelona.
+ nom_tie  
+----------
+ tienda03
+ tienda05
+ tienda07
+ tienda09
+ tienda10
+(5 rows)
+
+e2) nombre y número de empleados de las tiendas que tengan más empleados que todas las tiendas de Barcelona.
+ nom_tie  
+----------
+ tienda10
+(1 row)
+
+f) nombre y saldo medio de las tiendas con saldo medio >15 (el saldo medio se calcula a partir de los saldos de los números de prepago asignados en cada tienda)
+ nom_tie  |     saldo_medio     
+----------+---------------------
+ tienda02 | 19.0000000000000000
+ tienda03 | 15.5000000000000000
+ tienda05 | 16.0000000000000000
+ tienda07 | 19.0000000000000000
+ tienda08 | 15.5000000000000000
+ tienda10 | 16.0000000000000000
+(6 rows)
+
+g) números de prepago con saldo máximo
+    num    
+-----------
+ 600000022
+ 600000030
+ 600000032
+ 600000040
+(4 rows)
+
+h) clientes asignados a la tienda tienda01
+CREATE VIEW
+   dni    
+----------
+ 28000001
+ 28000011
+ 28000016
+(3 rows)
+
+i) Incremente el saldo de los números de prepago (5 unidades para los que tienen un saldo >=20 y 2 unidades para el resto). Decremente para que queden como el original.
+UPDATE 20
+    num    | nom_tie  | saldo 
+-----------+----------+-------
+ 600000021 | tienda01 | 12.00
+ 600000022 | tienda02 | 25.00
+ 600000023 | tienda03 | 17.00
+ 600000024 | tienda04 | 15.00
+ 600000025 | tienda05 | 14.00
+ 600000026 | tienda01 | 13.00
+ 600000027 | tienda02 | 20.00
+ 600000028 | tienda03 | 18.00
+ 600000029 | tienda04 | 14.00
+ 600000030 | tienda05 | 25.00
+ 600000031 | tienda06 | 12.00
+ 600000032 | tienda07 | 25.00
+ 600000033 | tienda08 | 17.00
+ 600000034 | tienda09 | 15.00
+ 600000035 | tienda10 | 14.00
+ 600000036 | tienda06 | 13.00
+ 600000037 | tienda07 | 20.00
+ 600000038 | tienda08 | 18.00
+ 600000039 | tienda09 | 14.00
+ 600000040 | tienda10 | 25.00
+(20 rows)
+
+UPDATE 20
+    num    | nom_tie  | saldo 
+-----------+----------+-------
+ 600000021 | tienda01 | 10.00
+ 600000022 | tienda02 | 20.00
+ 600000023 | tienda03 | 15.00
+ 600000024 | tienda04 | 13.00
+ 600000025 | tienda05 | 12.00
+ 600000026 | tienda01 | 11.00
+ 600000027 | tienda02 | 18.00
+ 600000028 | tienda03 | 16.00
+ 600000029 | tienda04 | 12.00
+ 600000030 | tienda05 | 20.00
+ 600000031 | tienda06 | 10.00
+ 600000032 | tienda07 | 20.00
+ 600000033 | tienda08 | 15.00
+ 600000034 | tienda09 | 13.00
+ 600000035 | tienda10 | 12.00
+ 600000036 | tienda06 | 11.00
+ 600000037 | tienda07 | 18.00
+ 600000038 | tienda08 | 16.00
+ 600000039 | tienda09 | 12.00
+ 600000040 | tienda10 | 20.00
+(20 rows)
+
+j) Clientes que tienen número de prepago pero no de contrato
+   i_nc   
+----------
+ 28000021
+ 28000022
+ 28000023
+ 28000024
+ 28000025
+ 28000026
+ 28000027
+ 28000028
+ 28000029
+ 28000030
+(10 rows)
+
